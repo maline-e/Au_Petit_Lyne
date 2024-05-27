@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/combined.css">
+
+    <title>Au Petit Lyne</title>
+
+    <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
+    <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
+    <meta name="author" content="nK">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+
+<body>
+    <header class="nk-header">
+        <div class="logo">
+            <h1>Au Petit Lyne</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <input type="text" placeholder="Recherche..." class="search-bar">
+            <a href="#login"><i class="fas fa-user"></i></a>
+            <a href="#favorites"><i class="fas fa-heart"></i></a>
+            <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-image">
+            <img src="images/image_hero.jpg" style="width: 1500px; height: 795px; object-fit: cover;"alt="Image de fond">
+        </div>
+        <div class="hero-content">
+            <h2>Personnalisez vos articles avec du pagne unique</h2>
+            <p>Découvrez notre collection de vêtements, accessoires, meubles et plus encore.</p>
+            <a href="#products" class="btn"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Nos Produits</h2>
+        <div class="product-gallery">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>À propos de Nous</h2>
+        <p>Au Petit Lyne est une entreprise dédiée à la personnalisation d'articles avec des tissus de pagne uniques. Nous croyons en la créativité, la qualité et la satisfaction de nos clients.</p>
+        <div class="video-container">
+            <video controls>
+                <source src="images/video.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contactez-Nous</h2>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Au Petit Lyne. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
