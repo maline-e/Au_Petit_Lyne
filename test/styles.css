@@ -1,11 +1,14 @@
-/* styles.css */
+/* START: Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* END: Global Styles */
 
+
+/* START: Header Styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -53,34 +56,118 @@ nav ul li a {
     margin-left: 1rem;
     font-size: 1.5rem;
 }
+/* END: Header Styles */
 
+
+
+/* START: Hero Section Styles */
 .hero {
-    background: url('path/to/your/image.jpg') no-repeat center center/cover;
-    height: 90vh;
+    position: relative;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     color: white;
     text-align: center;
 }
 
-.hero .btn {
-    display: inline-block;
-    padding: 0.75rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    font-size: 2rem;
-    text-decoration: none;
-    margin-top: 1rem;
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+    z-index: -1;
 }
 
+.bg-image > div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+}
+
+/*.bg-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+
+/*.hero-content {
+    position: relative;
+    z-index: 1;
+}*/
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    font-size: 20px;
+    color: #fff;
+}
+/* END: Hero Section Styles */
+
+
+
+/* START: Section Styles */
 .products-section, .about-section, .contact-section {
     padding: 4rem 2rem;
     text-align: center;
 }
 
+.display-4 {
+    font-size: 3.5rem;
+    font-weight: 300
+}
+
+.display-4 {
+    /*font-family: Playfair Display, serif;*/
+    color: #171717;
+    font-weight: 700
+}
+
+.display-4 {
+    font-size: 2.6rem
+}
+
+#about {
+    text-align: center;
+}
+
+#about .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh; /* Cela permet de centrer verticalement le contenu */
+}
+
+#about .row {
+    width: 100%;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+}
+
+#about p {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+/* END: Section Styles */
+
+
+/* START: Product Gallery Styles */
 .product-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -109,15 +196,20 @@ nav ul li a {
     font-size: 1.5rem;
     cursor: pointer;
 }
+/* END: Product Gallery Styles */
 
+/* START: Video Container Styles */
 .video-container {
     max-width: 600px;
     margin: 2rem auto;
 }
+/* END: Video Container Styles */
 
+/* START: Footer Styles */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1rem;
 }
+/* END:

@@ -1,9 +1,7 @@
-// scripts.js
-
 document.addEventListener('DOMContentLoaded', function() {
     const productGallery = document.querySelector('.product-gallery');
 
-    // Example product data
+    // START: Example product data
     const products = [
         { name: 'T-shirt en pagne', image: 'images/tshirt.jpeg', price: '25€' },
         { name: 'Coque de téléphone', image: 'images/phone-case.jpeg', price: '15€' },
@@ -11,8 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: 'Sac en pagne', image: 'images/bag.jpg', price: '40€' },
         // Add more products as needed
     ];
+    // END: Example product data
 
-    // Function to display products
+    // START: Function to display products
     function displayProducts() {
         products.forEach(product => {
             const productCard = document.createElement('div');
@@ -28,6 +27,18 @@ document.addEventListener('DOMContentLoaded', function() {
             productGallery.appendChild(productCard);
         });
     }
+    // END: Function to display products
 
     displayProducts();
+
+    function g() {
+        if ("undefined" != typeof b.fn.jarallax) {
+            b(".bg-image-parallax").jarallax({
+                speed: .8
+            })
+        }
+    }
+    
 });
+
+
